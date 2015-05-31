@@ -43,11 +43,18 @@ class RunLogInterfaceController: WKInterfaceController {
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
-        // Configure interface objects here.
+        if let run = context as? Run {
+            runs?.insert(run, atIndex: 0)
+            
+            runTable.insertRowsAtIndexes(NSIndexSet(index: 0), withRowType: "RunRow")
+            
+            if let rowc = runTable.rowControllerAtIndex(0) as? RunLogRowController {
+                configureRow(rowc, forRun: run)
+            }
+        }
     }
 
     override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
         super.willActivate()
         
         if runs == nil {
@@ -73,6 +80,10 @@ class RunLogInterfaceController: WKInterfaceController {
             duration: run.duration)
     }
 
+    override func table(table: WKInterfaceTable, didSelectRowAtIndex rowIndex: Int) {
+        NSLog("User tapped on row %d", rowIndex)
+    }
+    
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
