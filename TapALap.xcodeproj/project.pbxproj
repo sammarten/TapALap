@@ -1,0 +1,694 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		95DAB30C1B18FCAF0090BDA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DAB30B1B18FCAF0090BDA5 /* AppDelegate.swift */; };
+		95DAB30E1B18FCAF0090BDA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DAB30D1B18FCAF0090BDA5 /* ViewController.swift */; };
+		95DAB3111B18FCAF0090BDA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95DAB30F1B18FCAF0090BDA5 /* Main.storyboard */; };
+		95DAB3131B18FCAF0090BDA5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95DAB3121B18FCAF0090BDA5 /* Images.xcassets */; };
+		95DAB3161B18FCAF0090BDA5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95DAB3141B18FCAF0090BDA5 /* LaunchScreen.xib */; };
+		95DAB3221B18FCAF0090BDA5 /* TapALapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DAB3211B18FCAF0090BDA5 /* TapALapTests.swift */; };
+		95DAB3341B18FCD80090BDA5 /* GoRunningInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DAB3331B18FCD80090BDA5 /* GoRunningInterfaceController.swift */; };
+		95DAB3361B18FCD80090BDA5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95DAB3351B18FCD80090BDA5 /* Images.xcassets */; };
+		95DAB33A1B18FCD80090BDA5 /* TapALap WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 95DAB3391B18FCD80090BDA5 /* TapALap WatchKit App.app */; };
+		95DAB3421B18FCD80090BDA5 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95DAB3401B18FCD80090BDA5 /* Interface.storyboard */; };
+		95DAB3441B18FCD80090BDA5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95DAB3431B18FCD80090BDA5 /* Images.xcassets */; };
+		95DAB3471B18FCD80090BDA5 /* TapALap WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 95DAB32F1B18FCD70090BDA5 /* TapALap WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		95DAB3501B1903E40090BDA5 /* RunTimerInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DAB34F1B1903E40090BDA5 /* RunTimerInterfaceController.swift */; };
+		95DAB3541B190A9E0090BDA5 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DAB3531B190A9E0090BDA5 /* Track.swift */; };
+		95DAB3561B19EF2F0090BDA5 /* RunLogInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DAB3551B19EF2F0090BDA5 /* RunLogInterfaceController.swift */; };
+		95DAB3581B19F2380090BDA5 /* RunLogRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DAB3571B19F2380090BDA5 /* RunLogRowController.swift */; };
+		95DAB35A1B1A0CF00090BDA5 /* Run.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DAB3591B1A0CF00090BDA5 /* Run.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		95DAB31C1B18FCAF0090BDA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95DAB2FE1B18FCAF0090BDA5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95DAB3051B18FCAF0090BDA5;
+			remoteInfo = TapALap;
+		};
+		95DAB33B1B18FCD80090BDA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95DAB2FE1B18FCAF0090BDA5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95DAB3381B18FCD80090BDA5;
+			remoteInfo = "TapALap WatchKit App";
+		};
+		95DAB3451B18FCD80090BDA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95DAB2FE1B18FCAF0090BDA5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95DAB32E1B18FCD70090BDA5;
+			remoteInfo = "TapALap WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		95DAB34E1B18FCD80090BDA5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				95DAB3471B18FCD80090BDA5 /* TapALap WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		95DAB3061B18FCAF0090BDA5 /* TapALap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapALap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95DAB30A1B18FCAF0090BDA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95DAB30B1B18FCAF0090BDA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		95DAB30D1B18FCAF0090BDA5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		95DAB3101B18FCAF0090BDA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		95DAB3121B18FCAF0090BDA5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		95DAB3151B18FCAF0090BDA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		95DAB31B1B18FCAF0090BDA5 /* TapALapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TapALapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		95DAB3201B18FCAF0090BDA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95DAB3211B18FCAF0090BDA5 /* TapALapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapALapTests.swift; sourceTree = "<group>"; };
+		95DAB32F1B18FCD70090BDA5 /* TapALap WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TapALap WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		95DAB3321B18FCD70090BDA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95DAB3331B18FCD80090BDA5 /* GoRunningInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoRunningInterfaceController.swift; sourceTree = "<group>"; };
+		95DAB3351B18FCD80090BDA5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		95DAB3391B18FCD80090BDA5 /* TapALap WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TapALap WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		95DAB33F1B18FCD80090BDA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95DAB3411B18FCD80090BDA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		95DAB3431B18FCD80090BDA5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		95DAB34F1B1903E40090BDA5 /* RunTimerInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunTimerInterfaceController.swift; sourceTree = "<group>"; };
+		95DAB3531B190A9E0090BDA5 /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		95DAB3551B19EF2F0090BDA5 /* RunLogInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunLogInterfaceController.swift; sourceTree = "<group>"; };
+		95DAB3571B19F2380090BDA5 /* RunLogRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunLogRowController.swift; sourceTree = "<group>"; };
+		95DAB3591B1A0CF00090BDA5 /* Run.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Run.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95DAB3031B18FCAF0090BDA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95DAB3181B18FCAF0090BDA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95DAB32C1B18FCD70090BDA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		95DAB2FD1B18FCAF0090BDA5 = {
+			isa = PBXGroup;
+			children = (
+				95DAB3081B18FCAF0090BDA5 /* TapALap */,
+				95DAB31E1B18FCAF0090BDA5 /* TapALapTests */,
+				95DAB3301B18FCD70090BDA5 /* TapALap WatchKit Extension */,
+				95DAB33D1B18FCD80090BDA5 /* TapALap WatchKit App */,
+				95DAB3071B18FCAF0090BDA5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		95DAB3071B18FCAF0090BDA5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95DAB3061B18FCAF0090BDA5 /* TapALap.app */,
+				95DAB31B1B18FCAF0090BDA5 /* TapALapTests.xctest */,
+				95DAB32F1B18FCD70090BDA5 /* TapALap WatchKit Extension.appex */,
+				95DAB3391B18FCD80090BDA5 /* TapALap WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95DAB3081B18FCAF0090BDA5 /* TapALap */ = {
+			isa = PBXGroup;
+			children = (
+				95DAB30B1B18FCAF0090BDA5 /* AppDelegate.swift */,
+				95DAB30D1B18FCAF0090BDA5 /* ViewController.swift */,
+				95DAB30F1B18FCAF0090BDA5 /* Main.storyboard */,
+				95DAB3121B18FCAF0090BDA5 /* Images.xcassets */,
+				95DAB3141B18FCAF0090BDA5 /* LaunchScreen.xib */,
+				95DAB3091B18FCAF0090BDA5 /* Supporting Files */,
+			);
+			path = TapALap;
+			sourceTree = "<group>";
+		};
+		95DAB3091B18FCAF0090BDA5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				95DAB30A1B18FCAF0090BDA5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		95DAB31E1B18FCAF0090BDA5 /* TapALapTests */ = {
+			isa = PBXGroup;
+			children = (
+				95DAB3211B18FCAF0090BDA5 /* TapALapTests.swift */,
+				95DAB31F1B18FCAF0090BDA5 /* Supporting Files */,
+			);
+			path = TapALapTests;
+			sourceTree = "<group>";
+		};
+		95DAB31F1B18FCAF0090BDA5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				95DAB3201B18FCAF0090BDA5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		95DAB3301B18FCD70090BDA5 /* TapALap WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				95DAB3331B18FCD80090BDA5 /* GoRunningInterfaceController.swift */,
+				95DAB34F1B1903E40090BDA5 /* RunTimerInterfaceController.swift */,
+				95DAB3571B19F2380090BDA5 /* RunLogRowController.swift */,
+				95DAB3351B18FCD80090BDA5 /* Images.xcassets */,
+				95DAB3311B18FCD70090BDA5 /* Supporting Files */,
+				95DAB3531B190A9E0090BDA5 /* Track.swift */,
+				95DAB3551B19EF2F0090BDA5 /* RunLogInterfaceController.swift */,
+				95DAB3591B1A0CF00090BDA5 /* Run.swift */,
+			);
+			path = "TapALap WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		95DAB3311B18FCD70090BDA5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				95DAB3321B18FCD70090BDA5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		95DAB33D1B18FCD80090BDA5 /* TapALap WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				95DAB3401B18FCD80090BDA5 /* Interface.storyboard */,
+				95DAB3431B18FCD80090BDA5 /* Images.xcassets */,
+				95DAB33E1B18FCD80090BDA5 /* Supporting Files */,
+			);
+			path = "TapALap WatchKit App";
+			sourceTree = "<group>";
+		};
+		95DAB33E1B18FCD80090BDA5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				95DAB33F1B18FCD80090BDA5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95DAB3051B18FCAF0090BDA5 /* TapALap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95DAB3251B18FCAF0090BDA5 /* Build configuration list for PBXNativeTarget "TapALap" */;
+			buildPhases = (
+				95DAB3021B18FCAF0090BDA5 /* Sources */,
+				95DAB3031B18FCAF0090BDA5 /* Frameworks */,
+				95DAB3041B18FCAF0090BDA5 /* Resources */,
+				95DAB34E1B18FCD80090BDA5 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95DAB3461B18FCD80090BDA5 /* PBXTargetDependency */,
+			);
+			name = TapALap;
+			productName = TapALap;
+			productReference = 95DAB3061B18FCAF0090BDA5 /* TapALap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		95DAB31A1B18FCAF0090BDA5 /* TapALapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95DAB3281B18FCAF0090BDA5 /* Build configuration list for PBXNativeTarget "TapALapTests" */;
+			buildPhases = (
+				95DAB3171B18FCAF0090BDA5 /* Sources */,
+				95DAB3181B18FCAF0090BDA5 /* Frameworks */,
+				95DAB3191B18FCAF0090BDA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95DAB31D1B18FCAF0090BDA5 /* PBXTargetDependency */,
+			);
+			name = TapALapTests;
+			productName = TapALapTests;
+			productReference = 95DAB31B1B18FCAF0090BDA5 /* TapALapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		95DAB32E1B18FCD70090BDA5 /* TapALap WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95DAB34B1B18FCD80090BDA5 /* Build configuration list for PBXNativeTarget "TapALap WatchKit Extension" */;
+			buildPhases = (
+				95DAB32B1B18FCD70090BDA5 /* Sources */,
+				95DAB32C1B18FCD70090BDA5 /* Frameworks */,
+				95DAB32D1B18FCD70090BDA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95DAB33C1B18FCD80090BDA5 /* PBXTargetDependency */,
+			);
+			name = "TapALap WatchKit Extension";
+			productName = "TapALap WatchKit Extension";
+			productReference = 95DAB32F1B18FCD70090BDA5 /* TapALap WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		95DAB3381B18FCD80090BDA5 /* TapALap WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95DAB3481B18FCD80090BDA5 /* Build configuration list for PBXNativeTarget "TapALap WatchKit App" */;
+			buildPhases = (
+				95DAB3371B18FCD80090BDA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TapALap WatchKit App";
+			productName = "TapALap WatchKit App";
+			productReference = 95DAB3391B18FCD80090BDA5 /* TapALap WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95DAB2FE1B18FCAF0090BDA5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Sam Marten";
+				TargetAttributes = {
+					95DAB3051B18FCAF0090BDA5 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					95DAB31A1B18FCAF0090BDA5 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 95DAB3051B18FCAF0090BDA5;
+					};
+					95DAB32E1B18FCD70090BDA5 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					95DAB3381B18FCD80090BDA5 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+				};
+			};
+			buildConfigurationList = 95DAB3011B18FCAF0090BDA5 /* Build configuration list for PBXProject "TapALap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 95DAB2FD1B18FCAF0090BDA5;
+			productRefGroup = 95DAB3071B18FCAF0090BDA5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95DAB3051B18FCAF0090BDA5 /* TapALap */,
+				95DAB31A1B18FCAF0090BDA5 /* TapALapTests */,
+				95DAB32E1B18FCD70090BDA5 /* TapALap WatchKit Extension */,
+				95DAB3381B18FCD80090BDA5 /* TapALap WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95DAB3041B18FCAF0090BDA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95DAB3111B18FCAF0090BDA5 /* Main.storyboard in Resources */,
+				95DAB3161B18FCAF0090BDA5 /* LaunchScreen.xib in Resources */,
+				95DAB3131B18FCAF0090BDA5 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95DAB3191B18FCAF0090BDA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95DAB32D1B18FCD70090BDA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95DAB33A1B18FCD80090BDA5 /* TapALap WatchKit App.app in Resources */,
+				95DAB3361B18FCD80090BDA5 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95DAB3371B18FCD80090BDA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95DAB3421B18FCD80090BDA5 /* Interface.storyboard in Resources */,
+				95DAB3441B18FCD80090BDA5 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95DAB3021B18FCAF0090BDA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95DAB30E1B18FCAF0090BDA5 /* ViewController.swift in Sources */,
+				95DAB30C1B18FCAF0090BDA5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95DAB3171B18FCAF0090BDA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95DAB3221B18FCAF0090BDA5 /* TapALapTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95DAB32B1B18FCD70090BDA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95DAB3581B19F2380090BDA5 /* RunLogRowController.swift in Sources */,
+				95DAB35A1B1A0CF00090BDA5 /* Run.swift in Sources */,
+				95DAB3341B18FCD80090BDA5 /* GoRunningInterfaceController.swift in Sources */,
+				95DAB3501B1903E40090BDA5 /* RunTimerInterfaceController.swift in Sources */,
+				95DAB3561B19EF2F0090BDA5 /* RunLogInterfaceController.swift in Sources */,
+				95DAB3541B190A9E0090BDA5 /* Track.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		95DAB31D1B18FCAF0090BDA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95DAB3051B18FCAF0090BDA5 /* TapALap */;
+			targetProxy = 95DAB31C1B18FCAF0090BDA5 /* PBXContainerItemProxy */;
+		};
+		95DAB33C1B18FCD80090BDA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95DAB3381B18FCD80090BDA5 /* TapALap WatchKit App */;
+			targetProxy = 95DAB33B1B18FCD80090BDA5 /* PBXContainerItemProxy */;
+		};
+		95DAB3461B18FCD80090BDA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95DAB32E1B18FCD70090BDA5 /* TapALap WatchKit Extension */;
+			targetProxy = 95DAB3451B18FCD80090BDA5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		95DAB30F1B18FCAF0090BDA5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95DAB3101B18FCAF0090BDA5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		95DAB3141B18FCAF0090BDA5 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95DAB3151B18FCAF0090BDA5 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		95DAB3401B18FCD80090BDA5 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95DAB3411B18FCD80090BDA5 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		95DAB3231B18FCAF0090BDA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		95DAB3241B18FCAF0090BDA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95DAB3261B18FCAF0090BDA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TapALap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		95DAB3271B18FCAF0090BDA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TapALap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		95DAB3291B18FCAF0090BDA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TapALapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TapALap.app/TapALap";
+			};
+			name = Debug;
+		};
+		95DAB32A1B18FCAF0090BDA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TapALapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TapALap.app/TapALap";
+			};
+			name = Release;
+		};
+		95DAB3491B18FCD80090BDA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = TapALap_WatchKit_Extension;
+				INFOPLIST_FILE = "TapALap WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		95DAB34A1B18FCD80090BDA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = TapALap_WatchKit_Extension;
+				INFOPLIST_FILE = "TapALap WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		95DAB34C1B18FCD80090BDA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TapALap WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		95DAB34D1B18FCD80090BDA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "TapALap WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95DAB3011B18FCAF0090BDA5 /* Build configuration list for PBXProject "TapALap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95DAB3231B18FCAF0090BDA5 /* Debug */,
+				95DAB3241B18FCAF0090BDA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95DAB3251B18FCAF0090BDA5 /* Build configuration list for PBXNativeTarget "TapALap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95DAB3261B18FCAF0090BDA5 /* Debug */,
+				95DAB3271B18FCAF0090BDA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		95DAB3281B18FCAF0090BDA5 /* Build configuration list for PBXNativeTarget "TapALapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95DAB3291B18FCAF0090BDA5 /* Debug */,
+				95DAB32A1B18FCAF0090BDA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		95DAB3481B18FCD80090BDA5 /* Build configuration list for PBXNativeTarget "TapALap WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95DAB3491B18FCD80090BDA5 /* Debug */,
+				95DAB34A1B18FCD80090BDA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		95DAB34B1B18FCD80090BDA5 /* Build configuration list for PBXNativeTarget "TapALap WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95DAB34C1B18FCD80090BDA5 /* Debug */,
+				95DAB34D1B18FCD80090BDA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95DAB2FE1B18FCAF0090BDA5 /* Project object */;
+}
