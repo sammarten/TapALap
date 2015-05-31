@@ -69,15 +69,13 @@
                                 </group>
                             </items>
                         </group>
-                        <button width="1" alignment="left" title="Run Log" id="wnT-UM-0SK">
-                            <connections>
-                                <segue destination="Hbe-yu-WCu" kind="push" id="FZy-5l-d7Q"/>
-                            </connections>
-                        </button>
                     </items>
+                    <connections>
+                        <segue destination="Hbe-yu-WCu" kind="relationship" relationship="nextPage" id="MRr-tr-uXQ"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="388"/>
+            <point key="canvasLocation" x="218" y="476"/>
         </scene>
         <!--Run-->
         <scene sceneID="gSj-Eo-UaF">
@@ -133,6 +131,9 @@
                                                 <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
                                             </label>
                                         </items>
+                                        <connections>
+                                            <segue destination="dtH-O5-iqd" kind="modal" id="zzQ-Io-0hc"/>
+                                        </connections>
                                     </group>
                                     <connections>
                                         <outlet property="dateLabel" destination="d2A-Hi-7zV" id="rwd-lK-Ir3"/>
@@ -148,7 +149,14 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="429" y="484"/>
+            <point key="canvasLocation" x="449" y="476"/>
+        </scene>
+        <!--Run Details View Controller-->
+        <scene sceneID="Lyi-qE-S2k">
+            <objects>
+                <controller id="dtH-O5-iqd" customClass="RunDetailsViewController" customModule="TapALap_WatchKit_Extension"/>
+            </objects>
+            <point key="canvasLocation" x="670" y="472"/>
         </scene>
     </scenes>
 </document>

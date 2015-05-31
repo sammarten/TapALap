@@ -24,6 +24,7 @@
 		95DAB3561B19EF2F0090BDA5 /* RunLogInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DAB3551B19EF2F0090BDA5 /* RunLogInterfaceController.swift */; };
 		95DAB3581B19F2380090BDA5 /* RunLogRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DAB3571B19F2380090BDA5 /* RunLogRowController.swift */; };
 		95DAB35A1B1A0CF00090BDA5 /* Run.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DAB3591B1A0CF00090BDA5 /* Run.swift */; };
+		95DAB3601B1B61340090BDA5 /* RunDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DAB35F1B1B61340090BDA5 /* RunDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		95DAB3551B19EF2F0090BDA5 /* RunLogInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunLogInterfaceController.swift; sourceTree = "<group>"; };
 		95DAB3571B19F2380090BDA5 /* RunLogRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunLogRowController.swift; sourceTree = "<group>"; };
 		95DAB3591B1A0CF00090BDA5 /* Run.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Run.swift; sourceTree = "<group>"; };
+		95DAB35F1B1B61340090BDA5 /* RunDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 				95DAB3531B190A9E0090BDA5 /* Track.swift */,
 				95DAB3551B19EF2F0090BDA5 /* RunLogInterfaceController.swift */,
 				95DAB3591B1A0CF00090BDA5 /* Run.swift */,
+				95DAB35F1B1B61340090BDA5 /* RunDetailsViewController.swift */,
 			);
 			path = "TapALap WatchKit Extension";
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 				95DAB3581B19F2380090BDA5 /* RunLogRowController.swift in Sources */,
 				95DAB35A1B1A0CF00090BDA5 /* Run.swift in Sources */,
 				95DAB3341B18FCD80090BDA5 /* GoRunningInterfaceController.swift in Sources */,
+				95DAB3601B1B61340090BDA5 /* RunDetailsViewController.swift in Sources */,
 				95DAB3501B1903E40090BDA5 /* RunTimerInterfaceController.swift in Sources */,
 				95DAB3561B19EF2F0090BDA5 /* RunLogInterfaceController.swift in Sources */,
 				95DAB3541B190A9E0090BDA5 /* Track.swift in Sources */,
