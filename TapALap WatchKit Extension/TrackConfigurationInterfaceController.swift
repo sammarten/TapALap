@@ -1,8 +1,8 @@
 //
-//  InterfaceController.swift
-//  TapALap WatchKit Extension
+//  TrackConfigurationInterfaceController.swift
+//  TapALap
 //
-//  Created by Marten,Sam on 5/29/15.
+//  Created by Marten,Sam on 5/31/15.
 //  Copyright (c) 2015 Sam Marten. All rights reserved.
 //
 
@@ -10,12 +10,8 @@ import WatchKit
 import Foundation
 
 
-class GoRunningInterfaceController: WKInterfaceController {
+class TrackConfigurationInterfaceController: WKInterfaceController {
 
-    @IBAction func trackButtonPressed() {
-        presentControllerWithName("TrackConfiguration", context: nil)
-    }
-    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         

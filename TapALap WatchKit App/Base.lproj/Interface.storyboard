@@ -39,6 +39,9 @@
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <edgeInsets key="margins" left="4" right="0.0" top="2" bottom="2"/>
                             </group>
+                            <connections>
+                                <action selector="trackButtonPressed" destination="AgC-eL-Hgc" id="1tU-g0-S1R"/>
+                            </connections>
                         </button>
                         <button width="1" alignment="left" title="Start Run" id="iMQ-PB-KMy">
                             <color key="backgroundColor" red="0.38894641951704301" green="0.65607244318181812" blue="0.33879992387429442" alpha="1" colorSpace="calibratedRGB"/>
@@ -75,7 +78,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="218" y="476"/>
+            <point key="canvasLocation" x="200" y="467"/>
         </scene>
         <!--Run-->
         <scene sceneID="gSj-Eo-UaF">
@@ -105,7 +108,14 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="429" y="248"/>
+            <point key="canvasLocation" x="454" y="751"/>
+        </scene>
+        <!--TrackConfiguration-->
+        <scene sceneID="wn2-rV-PRc">
+            <objects>
+                <controller identifier="TrackConfiguration" id="jMh-Fh-PLq" customClass="TrackConfigurationInterfaceController" customModule="TapALap_WatchKit_Extension"/>
+            </objects>
+            <point key="canvasLocation" x="444" y="217"/>
         </scene>
         <!--Run Log-->
         <scene sceneID="KQg-qW-YZ8">
@@ -151,10 +161,10 @@
             </objects>
             <point key="canvasLocation" x="449" y="476"/>
         </scene>
-        <!--Run Details View Controller-->
+        <!--Close-->
         <scene sceneID="Lyi-qE-S2k">
             <objects>
-                <controller id="dtH-O5-iqd" customClass="RunDetailsViewController" customModule="TapALap_WatchKit_Extension"/>
+                <controller title="Close" id="dtH-O5-iqd" customClass="RunDetailsViewController" customModule="TapALap_WatchKit_Extension"/>
             </objects>
             <point key="canvasLocation" x="670" y="472"/>
         </scene>
