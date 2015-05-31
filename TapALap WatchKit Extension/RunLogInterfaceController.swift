@@ -44,6 +44,8 @@ class RunLogInterfaceController: WKInterfaceController {
         super.awakeWithContext(context)
         
         if let run = context as? Run {
+            becomeCurrentPage()
+            
             runs?.insert(run, atIndex: 0)
             
             runTable.insertRowsAtIndexes(NSIndexSet(index: 0), withRowType: "RunRow")

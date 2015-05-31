@@ -16,6 +16,12 @@ class GoRunningInterfaceController: WKInterfaceController {
         presentControllerWithName("TrackConfiguration", context: nil)
     }
     
+    @IBAction func startRunButtonPressed() {
+        // let names = ["RunTimerInterfaceController"]
+        let names = ["RunTimer"]
+        WKInterfaceController.reloadRootControllersWithNames(names, contexts: nil)
+    }
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         

@@ -8,7 +8,7 @@
         <!--Go Running-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller title="Go Running" id="AgC-eL-Hgc" customClass="GoRunningInterfaceController" customModule="TapALap_WatchKit_Extension">
+                <controller identifier="GoRunning" title="Go Running" id="AgC-eL-Hgc" customClass="GoRunningInterfaceController" customModule="TapALap_WatchKit_Extension">
                     <items>
                         <button alignment="left" id="IZD-xf-SQj">
                             <group key="contentGroup" width="1" alignment="left" layout="vertical" id="oTC-Ia-mPD">
@@ -45,6 +45,9 @@
                         </button>
                         <button width="1" alignment="left" title="Start Run" id="iMQ-PB-KMy">
                             <color key="backgroundColor" red="0.38894641951704301" green="0.65607244318181812" blue="0.33879992387429442" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="startRunButtonPressed" destination="AgC-eL-Hgc" id="2np-2o-Ije"/>
+                            </connections>
                         </button>
                         <group width="1" alignment="left" id="wZM-1K-B1J">
                             <items>
@@ -83,7 +86,7 @@
         <!--Run-->
         <scene sceneID="gSj-Eo-UaF">
             <objects>
-                <controller title="Run" id="TBY-Jq-PFo" customClass="RunTimerInterfaceController" customModule="TapALap_WatchKit_Extension">
+                <controller identifier="RunTimer" title="Run" id="TBY-Jq-PFo" customClass="RunTimerInterfaceController" customModule="TapALap_WatchKit_Extension">
                     <items>
                         <button width="1" alignment="left" title="Stop Run" id="zv5-zy-2aK">
                             <color key="backgroundColor" red="0.65607244318181812" green="0.18542414174530131" blue="0.16418999798593478" alpha="1" colorSpace="calibratedRGB"/>
@@ -120,7 +123,7 @@
         <!--Run Log-->
         <scene sceneID="KQg-qW-YZ8">
             <objects>
-                <controller title="Run Log" id="Hbe-yu-WCu" customClass="RunLogInterfaceController" customModule="TapALap_WatchKit_Extension">
+                <controller identifier="RunLog" title="Run Log" id="Hbe-yu-WCu" customClass="RunLogInterfaceController" customModule="TapALap_WatchKit_Extension">
                     <items>
                         <table alignment="left" id="MhK-vb-q5m">
                             <items>

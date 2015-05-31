@@ -48,6 +48,21 @@ class RunTimerInterfaceController: WKInterfaceController {
         endRun()
     }
     
+    func endRun() {
+        let contexts: [AnyObject]?
+        
+        if let lapCount = laps?.count {
+            let run = Run(distance: track.lapDistance * Double(lapCount), laps: laps!, startDate: startDate!)
+            contexts = [NSNull(), run]
+        }
+        else {
+            contexts = nil
+        }
+        
+        let names = ["GoRunning", "RunLog"]
+        WKInterfaceController.reloadRootControllersWithNames(names, contexts: contexts)
+    }
+    
     @IBAction func finishLapButtonPressed() {
         let totalDuration = NSDate().timeIntervalSinceDate(startDate!)
         let lapDuration = totalDuration - laps!.reduce(0, combine: +)
@@ -55,10 +70,6 @@ class RunTimerInterfaceController: WKInterfaceController {
         laps!.append(lapDuration)
         
         updateDistanceLabel()
-    }
-    
-    func endRun() {
-        
     }
     
     override func awakeWithContext(context: AnyObject?) {
