@@ -81,6 +81,16 @@ class RunLogInterfaceController: WKInterfaceController {
             distance: run.distance,
             duration: run.duration)
     }
+    
+    override func contextForSegueWithIdentifier(segueIdentifier: String, inTable table: WKInterfaceTable, rowIndex: Int) -> AnyObject? {
+        var context: AnyObject?
+    
+        if segueIdentifier == "RunDetails" {
+            context = runs![rowIndex]
+        }
+    
+        return context
+    }
 
     override func table(table: WKInterfaceTable, didSelectRowAtIndex rowIndex: Int) {
         NSLog("User tapped on row %d", rowIndex)

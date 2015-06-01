@@ -23,4 +23,8 @@ class Run {
     var duration: NSTimeInterval {
         return laps.reduce(0, combine: +)
     }
+    
+    var pace: NSTimeInterval {
+        return duration / NSTimeInterval(laps.count)
+    }
 }

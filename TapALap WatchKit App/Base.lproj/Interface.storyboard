@@ -145,7 +145,7 @@
                                             </label>
                                         </items>
                                         <connections>
-                                            <segue destination="dtH-O5-iqd" kind="modal" id="zzQ-Io-0hc"/>
+                                            <segue destination="dtH-O5-iqd" kind="modal" identifier="RunDetails" id="zzQ-Io-0hc"/>
                                         </connections>
                                     </group>
                                     <connections>
@@ -167,7 +167,47 @@
         <!--Close-->
         <scene sceneID="Lyi-qE-S2k">
             <objects>
-                <controller title="Close" id="dtH-O5-iqd" customClass="RunDetailsViewController" customModule="TapALap_WatchKit_Extension"/>
+                <controller title="Close" id="dtH-O5-iqd" customClass="RunDetailsViewController" customModule="TapALap_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Run Date" id="gyY-iM-2PB"/>
+                        <group width="1" alignment="left" id="kUL-yS-QhL">
+                            <items>
+                                <label alignment="left" text="Distance" id="JIV-fm-7UV"/>
+                                <label alignment="right" text="Pace" id="D3p-sb-E6x"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="hDh-3d-5of">
+                            <items>
+                                <label alignment="left" text="Laps:" id="Stx-5H-SEq"/>
+                                <table alignment="left" id="FuY-CH-dEe">
+                                    <items>
+                                        <tableRow identifier="LapRow" id="5dZ-Ky-SKt" customClass="LapDetailRowController" customModule="TapALap_WatchKit_Extension">
+                                            <group key="rootItem" width="1" alignment="left" id="uCW-w4-dwB">
+                                                <items>
+                                                    <label alignment="left" text="Lap" id="Jt0-xH-iLS"/>
+                                                    <label alignment="left" text="0" id="egD-RB-2y3">
+                                                        <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                                    </label>
+                                                    <label alignment="right" text="0:00:00" id="wwW-sY-brT"/>
+                                                </items>
+                                            </group>
+                                            <connections>
+                                                <outlet property="lapDurationLabel" destination="wwW-sY-brT" id="BqM-m1-gEd"/>
+                                                <outlet property="lapNumberLabel" destination="egD-RB-2y3" id="Tqv-W5-AxG"/>
+                                            </connections>
+                                        </tableRow>
+                                    </items>
+                                </table>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="lapsTable" destination="FuY-CH-dEe" id="S0o-7z-KS1"/>
+                        <outlet property="runDateLabel" destination="gyY-iM-2PB" id="lfh-vb-Rh5"/>
+                        <outlet property="runDistanceLabel" destination="JIV-fm-7UV" id="8Sm-eW-YAs"/>
+                        <outlet property="runPaceLabel" destination="D3p-sb-E6x" id="to1-eh-jlq"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="670" y="472"/>
         </scene>
