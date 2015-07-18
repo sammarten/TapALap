@@ -27,4 +27,13 @@ class Run {
     var pace: NSTimeInterval {
         return duration / NSTimeInterval(laps.count)
     }
+    
+    func dictionaryRepresentation() -> [NSObject: AnyObject] {
+        return [
+            "distance": distance,
+            "duration": duration,
+            "laps": laps,
+            "startDate": startDate,
+        ]
+    }
 }

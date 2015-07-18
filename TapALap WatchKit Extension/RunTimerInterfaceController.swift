@@ -53,6 +53,10 @@ class RunTimerInterfaceController: WKInterfaceController {
         
         if let lapCount = laps?.count {
             let run = Run(distance: track.lapDistance * Double(lapCount), laps: laps!, startDate: startDate!)
+            
+            saveRunToUserDefaults(run)
+            saveRunToHealthKit(run)
+            
             contexts = [NSNull(), run]
         }
         else {
@@ -61,6 +65,33 @@ class RunTimerInterfaceController: WKInterfaceController {
         
         let names = ["GoRunning", "RunLog"]
         WKInterfaceController.reloadRootControllersWithNames(names, contexts: contexts)
+    }
+    
+    func saveRunToHealthKit(run: Run) {
+        let userInfo = ["RunToSave": run.dictionaryRepresentation()]
+        
+        WKInterfaceController.openParentApplication(userInfo) {
+            replyInfo, error in
+            if replyInfo != nil {
+                self.handleReply(replyInfo)
+            }
+            else if let error = error {
+                NSLog("Error in reply: %@", error.localizedDescription)
+            }
+        }
+    }
+    
+    func handleReply(replyInfo: [NSObject: AnyObject]) {
+        if let success = replyInfo["Success"] as? Bool where success == true {
+            NSLog("Saved run to HealthKit")
+        }
+        else {
+            NSLog("Couldn't save run!")
+            
+            if let replyError = replyInfo["Error"] as? String {
+                NSLog("Error: " + replyError)
+            }
+        }
     }
     
     @IBAction func finishLapButtonPressed() {
@@ -72,15 +103,21 @@ class RunTimerInterfaceController: WKInterfaceController {
         updateDistanceLabel()
     }
     
-    override func awakeWithContext(context: AnyObject?) {
-        super.awakeWithContext(context)
+    func saveRunToUserDefaults(run: Run) {
+        let defaults = NSUserDefaults(suiteName: "group.com.pragprog.tapalap")
         
-        // Configure interface objects here.
+        if let defaults = defaults {
+            var savedRuns = defaults.objectForKey("Runs") as? [[NSObject: AnyObject]]
+            
+            if savedRuns != nil {
+                savedRuns!.append(run.dictionaryRepresentation())
+            }
+            else {
+                savedRuns = [run.dictionaryRepresentation()]
+            }
+            
+            defaults.setObject(savedRuns, forKey: "Runs")
+            defaults.synchronize()
+        }
     }
-
-    override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
-        super.didDeactivate()
-    }
-
 }

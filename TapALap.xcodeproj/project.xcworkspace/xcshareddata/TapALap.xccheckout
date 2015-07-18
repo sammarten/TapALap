@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>5CD3D29B-A1B2-4D6A-AC8E-A229B82A9C92</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>TapALap</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>E5A8532E01332D40647625CBDA1FE61BD6094C12</key>
 		<string>https://github.com/sammarten/TapALap.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>TapALap.xcodeproj/project.xcworkspace</string>
+	<string>TapALap.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>E5A8532E01332D40647625CBDA1FE61BD6094C12</key>
